@@ -5,10 +5,88 @@ html {
     #16140e 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   color: rgb(202, 196, 189);
-  font-family: "Reem Kufi", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   height: 100vh;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+nav {
+  background: black;
+}
+.nav-this-page {
+  font-weight: bold;
+  border-bottom: solid 1px rgba(160, 68, 96, 0.774);
+  padding-bottom: 10px;
+}
+.row {
+}
+.row::after,
+nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.navbar {
+  float: right;
+}
+.nav-link {
+  margin-left: 20px;
+}
+.col {
+  float: left;
+  padding: 20px;
+}
+.w-90 {
+  width: calc(90% - 40px);
+}
+.w-85 {
+  width: calc(85% - 40px);
+}
+.w-80 {
+  width: calc(80% - 40px);
+}
+.w-75 {
+  width: calc(75% - 40px);
+}
+.w-60 {
+  width: calc(60% - 40px);
+}
+.w-55 {
+  width: calc(55% - 40px);
+}
+.w-50 {
+  width: calc(50% - 40px);
+}
+.w-45 {
+  width: calc(45% - 40px);
+}
+.w-40 {
+  width: calc(40% - 40px);
+}
+.w-30 {
+  width: calc(30% - 40px);
+}
+.w-25 {
+  width: calc(25% - 40px);
+}
+.w-20 {
+  width: calc(20% - 40px);
+}
+.w-15 {
+  width: calc(15% - 40px);
+}
+.w-10 {
+  width: calc(10% - 40px);
+}
+.w-5 {
+  width: calc(5% - 40px);
+}
+.float-left {
+  float: left;
 }
 h1 {
   font-family: "Sorts Mill Goudy", serif;
@@ -24,11 +102,12 @@ h2 {
   font-weight: normal;
   margin: 15px 0px;
   letter-spacing: 2px;
+  /* font-family: "Montserrat", sans-serif; */
 }
 h3 {
   font-family: "Sorts Mill Goudy", serif;
   font-style: italic;
-  font-size: 30px;
+  font-size: 34px;
   text-transform: lowercase;
   font-weight: 200;
   margin: 15px 0px;
@@ -36,38 +115,39 @@ h3 {
 h4 {
   font-family: "Sorts Mill Goudy", serif;
   font-style: italic;
-  font-size: 20px;
+  font-size: 22px;
   text-transform: lowercase;
   font-weight: 200;
   margin: 15px 0px;
   color: rgb(163, 156, 159);
 }
 h5 {
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   font-weight: 200;
   color: rgb(163, 143, 152);
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   margin-bottom: 5px;
+  /* font-family: "Montserrat", sans-serif; */
 }
 p {
-  font-size: 17px;
+  font-size: 13px;
   text-align: justify;
   text-emphasis: none;
   color: rgb(163, 143, 152);
+  letter-spacing: 0.6px;
+  line-height: 1.7;
 }
 hr {
   border: solid 0.5px rgba(160, 68, 96, 0.774);
+  width: 100%;
 }
 button {
-  padding: 8px 24px;
+  padding: 12px 24px;
   background: black;
   color: rgba(199, 106, 134, 0.829);
-  font-family: "Reem Kufi", sans-serif;
-  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
   text-transform: uppercase;
   border: solid 1px rgba(160, 68, 96, 0.774);
-}
-button:active {
-  outline: none;
 }
