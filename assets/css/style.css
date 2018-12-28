@@ -40,6 +40,9 @@ nav::after {
   float: left;
   padding: 20px;
 }
+.w-100 {
+  width: 100%;
+}
 .w-90 {
   width: calc(90% - 40px);
 }
