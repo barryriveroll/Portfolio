@@ -17,15 +17,16 @@ html {
 body {
   height: 100vh;
   margin: 0px;
-  color: rgb(41, 50, 60);
+  color: rgb(38, 41, 44);
 }
 a {
   color: wheat;
   font-style: none;
   text-decoration: none;
+  text-shadow: 1px 1px 1px black;
 }
-.b {
-  color: #28313b;
+a:hover {
+  font-style: italic;
 }
 #port-url,
 #port-github {
@@ -148,9 +149,7 @@ h2 {
   font-weight: normal;
   margin: 15px 0px;
   letter-spacing: 2px;
-}
-.home-name {
-  /* text-shadow: 1px 1px 1px black; */
+  text-shadow: 1px 1px 1px black;
 }
 .home-subtitle {
   color: wheat;
@@ -226,9 +225,6 @@ button {
     url("../images/rpg1.png") no-repeat;
   height: 100%;
 }
-#home {
-  /* padding: 300px 0px; */
-}
 .home-nav {
   list-style-type: none;
   padding: 0px;
@@ -240,7 +236,7 @@ button {
   padding: 16px 0px;
   transition: width 0.2s;
   width: 0px;
-  background: wheat;
+  background: rgb(41, 50, 60);
   border-bottom: solid 1px rgba(175, 41, 81, 0.774);
 }
 .nav-li:before {
@@ -273,7 +269,7 @@ button {
   height: 232px;
   width: 336px;
   background: rgb(12, 44, 80);
-  box-shadow: 2px 4px 6px #0000006c;
+  box-shadow: 1px 2px 3px #0000006c;
   float: left;
   margin: 10px;
   border-radius: 3px;
@@ -286,7 +282,7 @@ button {
   overflow: hidden;
   border: solid 4px #f5deb3;
   border-radius: 3px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 3px 3px 2px black;
 }
 #port-name {
   padding: 10px;
@@ -306,6 +302,7 @@ button {
 .portfolio-div:hover {
   transform: scale(1.05);
   cursor: pointer;
+  box-shadow: 6px 6px 4px #0000006c;
 }
 .portfolio-div:hover .overlay {
   filter: opacity(100%);
@@ -329,7 +326,7 @@ button {
   box-shadow: 1px 2px 3px #0000006c;
 }
 .portfolio-current {
-  transition: height 0.2s;
+  transition: all 0.2s;
   color: wheat !important;
   position: relative;
   width: 1070px;
@@ -339,6 +336,18 @@ button {
   background: rgb(41, 50, 60);
   overflow: hidden;
   border-radius: 5px;
+}
+.portfolio-selector {
+  position: relative;
+  left: 200px;
+  /* +178px */
+  /* height: 118px; */
+  height: 0px;
+  width: 178px;
+  background: #29323c;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: all 0.2s;
 }
 .portfolio-close {
   position: relative;
@@ -353,6 +362,12 @@ button {
   float: right;
   color: wheat;
   font-size: 36px;
+  padding-top: 10px;
+}
+.portfolio-tabs {
+  position: relative;
+  transition: top 0.2s;
+  /* top: -118px; */
 }
 .image-port-current {
   width: 100%;
@@ -385,8 +400,18 @@ button {
 }
 footer {
   width: 100%;
-  height: 150px;
+  height: 80px;
   background: rgb(41, 50, 60);
+  text-align: center;
+  color: wheat;
+  font-size: 13px;
+  font-weight: 440;
+  letter-spacing: 0.6px;
+  line-height: 1.7;
+  padding-top: 30px;
+}
+footer a {
+  color: rgba(175, 41, 81, 0.774);
 }
 #glasses-eye {
   position: relative;
@@ -475,11 +500,50 @@ footer {
   padding: 20px;
   margin: 10px;
   border-radius: 3px;
-  transition: transform 0.35s;
+  transition: all 0.35s;
   color: wheat;
   text-align: center;
+  text-shadow: 1px 1px 1px black;
 }
 .contact-icon {
   font-size: 55px;
   margin-bottom: -20px;
+}
+.email-text,
+.phone-text {
+  /* position: relative; */
+  float: right;
+  color: wheat;
+  /* top: 524px; */
+  height: 1px;
+  width: 184px;
+  /* left: 533px; */
+  /* left: 405px; */
+  padding-left: 6px;
+  background: #29323c00;
+  border-radius: 3px;
+  transition: height 0.2s;
+  overflow: hidden;
+  margin: 0px 6px;
+}
+.phone-text {
+  /* left: 606px;
+  top: -48px; */
+  padding-left: 25px;
+  width: 164px;
+}
+.contact-text-divs {
+  height: 190px;
+  width: 801px;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+  }
+  .container {
+    width: 100%;
+  }
+  .portfolio-div {
+    width: 100%;
+  }
 }

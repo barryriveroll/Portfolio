@@ -19,7 +19,7 @@
     <script src="assets/javascript/main.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/debug.addIndicators.min.js"></script>
-    <title>Barry Riveroll</title>
+    <title>Barry Riveroll » Web Developer</title>
   </head>
   <body>
     <nav id="nav-trigger" class="nav-hidden">
@@ -48,9 +48,9 @@
         </div>
         <div class="col w-30">
           <ul class="home-nav">
-            <li class="nav-li"><a class="b" href="#about">About</a></li>
-            <li class="nav-li"><a class="b" href="#portfolio">Portfolio</a></li>
-            <li class="nav-li"><a class="b" href="#contact">Contact</a></li>
+            <li class="nav-li"><a href="#about">About</a></li>
+            <li class="nav-li"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-li"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -116,30 +116,30 @@
           </div>
         </div>
         <div class="col w-60">
-          <h5>About Me</h5>
+          <h5>Hey, I'm Barry</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
-            qui saepe aut, magni enim quae unde accusantium expedita non
-            reiciendis inventore? Quibusdam sint aliquid dolorem fugiat cumque
-            praesentium placeat corporis, quo ducimus, expedita voluptatem
-            officia temporibus id veniam voluptates autem!
+            I'm a junior level full-stack web developer currently working
+            through UNC-Chapel Hill's Coding Bootcamp. I am experienced in HTML,
+            CSS (including multiple frameworks such as Bootstrap and Semantic
+            UI), and JavaScript/jQuery.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quo vel
-            ullam? Placeat illum hic qui repellat quis.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            eaque. Nesciunt magni ullam, quis aperiam, nihil eos officiis
-            ratione inventore, enim iusto officia ad autem! Eveniet, doloremque
-            beatae consequuntur voluptates labore dolorum harum. Expedita
-            voluptates, adipisci sequi nobis quasi ducimus.
+            Besides this course, I have been a hobbyist programmer for the past
+            6+ years primarily using the Unity engine with C# and JavaScript.
           </p>
           <h5>Find Me Here</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem nostrum tenetur doloribus aliquam velit! Atque porro
-            unde maiores animi distinctio?
+            Find me on
+            <a target="_blank" href="https://github.com/barryriveroll"
+              >Github</a
+            >
+            and
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/barry-riveroll-684602166/"
+              >LinkedIn</a
+            >. Additional contact information can be found below in the Contact
+            section.
           </p>
         </div>
       </div>
@@ -165,101 +165,110 @@
               ></a>
             </div>
           </div>
-          <div class="col w-45" id="port-text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
-              animi cum officiis veniam repellendus libero dolorem minima enim
-              rerum atque ipsum, reiciendis quam aperiam nisi veritatis optio
-              asperiores amet! Nemo dolorem obcaecati sed in! Architecto
-              provident autem commodi fugit itaque! Quae, dolore ipsum
-              architecto nostrum eligendi facere quidem voluptatibus cum.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              dignissimos officia labore nisi tenetur iusto saepe praesentium
-              facere doloremque sequi.
-            </p>
+          <div class="col w-45" id="port-text"></div>
+        </div>
+        <div class="portfolio-selector"></div>
+        <div class="portfolio-tabs">
+          <div class="portfolio-div" data-id="0">
+            <div class="overlay"><h3 class="portfolio-h3">Dart</h3></div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/dart1.png"
+              alt="RPG image"
+            />
           </div>
-        </div>
-        <div class="portfolio-div" data-id="0">
-          <div class="overlay"><h3 class="portfolio-h3">Dart</h3></div>
-          <img
-            class="portfolio-thumbnail"
-            src="./assets/images/dart1.png"
-            alt="RPG image"
-          />
-        </div>
-        <div class="portfolio-div" data-id="1">
-          <div class="overlay">
-            <h3 class="portfolio-h3">Rock, Paper, Scissors</h3>
+          <div class="portfolio-div" data-id="1">
+            <div class="overlay">
+              <h3 class="portfolio-h3">Rock, Paper, Scissors</h3>
+            </div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/rps1.png"
+              alt="RPG image"
+            />
           </div>
-          <img
-            class="portfolio-thumbnail"
-            src="./assets/images/rps1.png"
-            alt="RPG image"
-          />
-        </div>
-        <div class="portfolio-div" data-id="2">
-          <div class="overlay"><h3 class="portfolio-h3">Gif Giver</h3></div>
-          <img
-            class="portfolio-thumbnail"
-            src="./assets/images/gif1.png"
-            alt="RPG image"
-          />
-        </div>
-        <div class="portfolio-div" data-id="3">
-          <div class="overlay"><h3 class="portfolio-h3">TV Trivia</h3></div>
-          <img
-            class="portfolio-thumbnail"
-            src="./assets/images/trivia1.png"
-            alt="RPG image"
-          />
-        </div>
-        <div class="portfolio-div" data-id="4">
-          <div class="overlay">
-            <h3 class="portfolio-h3">Goblin Grind RPG</h3>
+          <div class="portfolio-div" data-id="2">
+            <div class="overlay"><h3 class="portfolio-h3">Gif Giver</h3></div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/gif1.png"
+              alt="RPG image"
+            />
           </div>
-          <img
-            class="portfolio-thumbnail"
-            src="./assets/images/rpg1.png"
-            alt="RPG image"
-          />
-        </div>
-        <div class="portfolio-div" data-id="5">
-          <div class="overlay">
-            <h3 class="portfolio-h3">Word Guess: Zombies</h3>
+          <div class="portfolio-div" data-id="3">
+            <div class="overlay"><h3 class="portfolio-h3">TV Trivia</h3></div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/trivia1.png"
+              alt="RPG image"
+            />
           </div>
-          <img
-            class="portfolio-thumbnail"
-            src="./assets/images/hangman1.png"
-            alt="RPG image"
-          />
+          <div class="portfolio-div" data-id="4">
+            <div class="overlay">
+              <h3 class="portfolio-h3">Goblin Grind RPG</h3>
+            </div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/rpg1.png"
+              alt="RPG image"
+            />
+          </div>
+          <div class="portfolio-div" data-id="5">
+            <div class="overlay">
+              <h3 class="portfolio-h3">Word Guess: Zombies</h3>
+            </div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/hangman1.png"
+              alt="RPG image"
+            />
+          </div>
         </div>
       </div>
       <div class="row section" id="contact">
         <div class="col w-10"></div>
         <div class="col w-80 center">
           <h2>Contact</h2>
-          <div class="contact-div">
-            <i class="fab fa-linkedin-in contact-icon"></i>
-            <h5>Linkedin <i class="fas fa-external-link-square-alt"></i></h5>
-          </div>
-          <div class="contact-div">
-            <i class="fab fa-github contact-icon"></i>
-            <h5>Github <i class="fas fa-external-link-square-alt"></i></h5>
-          </div>
-          <div class="contact-div">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/barry-riveroll-684602166/"
+          >
+            <div class="contact-div">
+              <i class="fab fa-linkedin-in contact-icon"></i>
+              <h5>
+                Linkedin <i class="fas fa-external-link-square-alt"></i>
+              </h5></div
+          ></a>
+          <a target="_blank" href="https://github.com/barryriveroll">
+            <div class="contact-div">
+              <i class="fab fa-github contact-icon"></i>
+              <h5>
+                Github <i class="fas fa-external-link-square-alt"></i>
+              </h5></div
+          ></a>
+          <div id="contact-email" class="contact-div">
             <i class="fas fa-at contact-icon"></i>
             <h5>Email</h5>
           </div>
-          <div class="contact-div">
+          <div id="contact-phone" class="contact-div">
             <i class="fas fa-phone contact-icon"></i>
             <h5>Phone Number</h5>
+          </div>
+          <div class="contact-text-divs">
+            <div class="phone-text"></div>
+            <div class="email-text"></div>
           </div>
         </div>
         <div class="col w-10"></div>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      ©
+      <a target="_blank" href="https://github.com/barryriveroll/Portfolio"
+        >Barry Riveroll, 2019</a
+      ><br />
+      This portfolio uses
+      <a target="_blank" href="http://scrollmagic.io/">ScrollMagic</a>
+    </footer>
   </body>
 </html>
