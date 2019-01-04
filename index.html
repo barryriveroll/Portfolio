@@ -8,90 +8,267 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Sorts+Mill+Goudy:400i"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style1.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/main.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/debug.addIndicators.min.js"></script>
+    <title>Barry Riveroll » Web Developer</title>
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <div class="col w-40"><h2 class="float-left">Barry Riveroll</h2></div>
-        <div class="row">
-          <div class="col w-60">
-            <div class="navbar">
-              <h5 class="float-left nav-link">Home</h5>
-              <h5 class="float-left nav-link nav-this-page">Portfolio</h5>
-              <h5 class="float-left nav-link">Contact</h5>
-            </div>
-          </div>
+    <nav id="nav-trigger" class="nav-hidden">
+      <div class="col w-40"><h2 class="float-left">Barry Riveroll</h2></div>
+      <div class="col w-60">
+        <div class="navbar">
+          <h5 id="nav-about" class="float-left nav-link">
+            <a href="#about">About</a>
+          </h5>
+          <h5 id="nav-portfolio" class="float-left nav-link">
+            <a href="#portfolio">Portfolio</a>
+          </h5>
+          <h5 id="nav-contact" class="float-left nav-link">
+            <a href="#contact">Contact</a>
+          </h5>
         </div>
-      </nav>
-      <div class="row">
-        <div class="col w-15">
-          <h4>game title</h4>
-          <h4>testing heading</h4>
-          <h4>listing 3</h4>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row section" id="home">
+        <div class="col w-70">
+          <h1 class="home-name">Barry Riveroll</h1>
+          <h2 id="pin2" class="home-subtitle">
+            » <span class="stack-subtitle">Full-stack</span> web developer
+          </h2>
         </div>
         <div class="col w-30">
-          <h1>heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
-          <hr />
-          <p>Horizontal rule</p>
-          <p>
-            Sample p text here. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Aliquid eveniet sit quas. Inventore illum a,
-            soluta illo consequuntur quo eveniet.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
-            minus, ipsam id fugiat ea magni inventore sed? Minus adipisci,
-            doloribus est odio reprehenderit asperiores aliquid quis nulla
-            voluptas quo debitis earum nisi culpa corporis, veniam dolor qui.
-            Quisquam, minima repellendus!
-          </p>
-          <button>Button 1</button> <button>Longer button</button>
+          <ul class="home-nav">
+            <li class="nav-li"><a href="#about">About</a></li>
+            <li class="nav-li"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-li"><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="col w-55">
-          <h1>Testing More Here</h1>
-          <h3>subtitle</h3>
-          <hr />
-          <h5>Initial Content</h5>
+      </div>
+      <div class="row section" id="about">
+        <div class="col w-40">
+          <div class="portrait-div">
+            <!-- #region PORTRAIT -->
+            <!--
+              <div class="row">
+                <div class="col w-100">
+                  <div id="hair" class="portrait-piece">
+                    <div
+                      class="float-left"
+                      id="hair-1"
+                      style="top: -141px;
+                      left: 310px;
+                      width: 181px;
+                      transform: rotate(13deg);
+                      border-top-left-radius: 113% 101%;"
+                    ></div>
+                    <div
+                      class="float-left"
+                      id="hair-1"
+                      style="top: -166px;
+                      left: 52px;"
+                    ></div>
+                    <div
+                      class="float-left"
+                      id="hair-1"
+                      style="top: -197px;
+                      left: 58px;
+                      width: 212px;
+                      height: 99px;
+                      transform: scale(1.8) rotate(-14deg);
+                      border-top-left-radius: 147% 228%;"
+                    ></div>
+                    <div
+                      class="float-left"
+                      id="hair-1"
+                      style="top: -177px;
+                      left: 259px;
+                      width: 92px;
+                      transform: rotate(185deg);"
+                    ></div>
+                  </div>
+                  <div class="float-left" id="hair-1"></div>
+                  <div id="glasses" class="portrait-piece">
+                    <div class="float-left" id="glasses-eye"></div>
+                    <div class="float-left" id="glasses-mid"></div>
+                    <div class="float-left" id="glasses-eye"></div>
+                  </div>
+                </div>
+              </div>
+            -->
+            <!-- #endregion -->
+          </div>
+          <div class="art-label">
+            <p class="label-text bold italic">Self-portrait</p>
+            <br />
+            <p class="label-text">2018</p>
+            <p class="label-text">Div elements</p>
+            <p class="label-text">378x450 pixels</p>
+          </div>
+        </div>
+        <div class="col w-60">
+          <h5>Hey, I'm Barry</h5>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste,
-            dolore. Quidem adipisci impedit natus esse! Nemo, accusamus? Quam,
-            laudantium molestiae? Impedit atque odit magni voluptatibus unde
-            rerum hic aliquid veritatis, quas similique esse, at aspernatur?
-            Libero cum ab ex aut quae quo quasi ut, accusamus, dolorum
-            distinctio tempore autem vitae.
+            I'm a junior level full-stack web developer currently working
+            through UNC-Chapel Hill's Coding Bootcamp. I am experienced in HTML,
+            CSS (including multiple frameworks such as Bootstrap and Semantic
+            UI), and JavaScript/jQuery.
           </p>
-          <h5>Second paragraph</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta et
-            nam dolorem praesentium maiores temporibus magnam in quis quos
-            ratione!
+            Besides this course, I have been a hobbyist programmer for the past
+            6+ years primarily using the Unity engine with C# and JavaScript.
+          </p>
+          <h5>Find Me Here</h5>
+          <p>
+            Find me on
+            <a target="_blank" href="https://github.com/barryriveroll"
+              >Github</a
+            >
+            and
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/barry-riveroll-684602166/"
+              >LinkedIn</a
+            >. Additional contact information can be found below in the Contact
+            section.
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col w-15"></div>
-        <div class="col w-85">
-          <h1>testing major heading width</h1>
-          <h2>Smaller Heading</h2>
-          <hr />
-          <h5>even smaller heading</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            cupiditate iste error magnam? Ut cumque dolore inventore non
-            quisquam qui officiis autem tempora illo! Incidunt, perspiciatis.
-            Veniam impedit minima, nisi aperiam sint fuga velit. Velit voluptate
-            incidunt magnam eaque autem explicabo consequuntur, nemo quaerat
-            quisquam cumque dignissimos non necessitatibus ad! Sit quia
-            reiciendis error nam repellat. Debitis inventore aspernatur vitae!
-          </p>
+      <div class="row section" id="portfolio">
+        <div class="portfolio-current">
+          <i class="fas fa-times portfolio-close"></i>
+          <h3 id="port-name">Dart</h3>
+          <div class="col w-55">
+            <div class="port-image-div">
+              <img
+                id="port-image"
+                class="image-port-current"
+                src="./assets/images/dart1.png"
+                alt="Dart project image"
+              />
+            </div>
+            <div class="portfolio-links">
+              <a target="_blank" id="port-github" href=""
+                ><i class="fab fa-github-square"></i
+              ></a>
+              <a target="_blank" id="port-url" href=""
+                ><i class="fas fa-external-link-square-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col w-45" id="port-text"></div>
         </div>
+        <div class="portfolio-selector"></div>
+        <div class="portfolio-tabs">
+          <div class="portfolio-div" data-id="0">
+            <div class="overlay"><h3 class="portfolio-h3">Dart</h3></div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/dart1.png"
+              alt="RPG image"
+            />
+          </div>
+          <div class="portfolio-div" data-id="1">
+            <div class="overlay">
+              <h3 class="portfolio-h3">Rock, Paper, Scissors</h3>
+            </div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/rps1.png"
+              alt="RPG image"
+            />
+          </div>
+          <div class="portfolio-div" data-id="2">
+            <div class="overlay"><h3 class="portfolio-h3">Gif Giver</h3></div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/gif1.png"
+              alt="RPG image"
+            />
+          </div>
+          <div class="portfolio-div" data-id="3">
+            <div class="overlay"><h3 class="portfolio-h3">TV Trivia</h3></div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/trivia1.png"
+              alt="RPG image"
+            />
+          </div>
+          <div class="portfolio-div" data-id="4">
+            <div class="overlay">
+              <h3 class="portfolio-h3">Goblin Grind RPG</h3>
+            </div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/rpg1.png"
+              alt="RPG image"
+            />
+          </div>
+          <div class="portfolio-div" data-id="5">
+            <div class="overlay">
+              <h3 class="portfolio-h3">Word Guess: Zombies</h3>
+            </div>
+            <img
+              class="portfolio-thumbnail"
+              src="./assets/images/hangman1.png"
+              alt="RPG image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row section" id="contact">
+        <div class="col w-10"></div>
+        <div class="col w-80 center">
+          <h2>Contact</h2>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/barry-riveroll-684602166/"
+          >
+            <div class="contact-div">
+              <i class="fab fa-linkedin-in contact-icon"></i>
+              <h5>
+                Linkedin <i class="fas fa-external-link-square-alt"></i>
+              </h5></div
+          ></a>
+          <a target="_blank" href="https://github.com/barryriveroll">
+            <div class="contact-div">
+              <i class="fab fa-github contact-icon"></i>
+              <h5>
+                Github <i class="fas fa-external-link-square-alt"></i>
+              </h5></div
+          ></a>
+          <div id="contact-email" class="contact-div">
+            <i class="fas fa-at contact-icon"></i>
+            <h5>Email</h5>
+          </div>
+          <div id="contact-phone" class="contact-div">
+            <i class="fas fa-phone contact-icon"></i>
+            <h5>Phone Number</h5>
+          </div>
+          <div class="contact-text-divs">
+            <div class="phone-text"></div>
+            <div class="email-text"></div>
+          </div>
+        </div>
+        <div class="col w-10"></div>
       </div>
     </div>
+    <footer>
+      ©
+      <a target="_blank" href="https://github.com/barryriveroll/Portfolio"
+        >Barry Riveroll, 2019</a
+      ><br />
+      This portfolio uses
+      <a target="_blank" href="http://scrollmagic.io/">ScrollMagic</a>
+    </footer>
   </body>
 </html>
