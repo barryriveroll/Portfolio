@@ -1,5 +1,13 @@
 var portfolioItems = [
   {
+    name: "Friend Finder",
+    text:
+      "<p>This project's emphasis is on Express and uses a server to route to HTML pages and use data from an API via GET method and add data via POST method. After answering the 10 questions and entering a name and photo URL (no photo uploading currently) the data is sent to the server. The user's 'scores', or the number values of each question, are compared against other users to find the user with the most similar answers.</p><p>Once the appropriate user is found, that data is returned from the API and shown in the browser to the user. Their survey questions and other data is now in the API as well, and the next person to take the survey could get matched with a previous user afterwards.</p><p>The data is also verified twice: once on the front-end, even though the basic inputs are fairly restricted, and again on the back-end before any data is actually stored in the server.</p>",
+    url: "https://mighty-refuge-53027.herokuapp.com/",
+    github: "https://github.com/barryriveroll/FriendFinder",
+    img: "./assets/images/ff1.png"
+  },
+  {
     name: "Dart",
     text:
       "<p>Choose a starting location and a destination location and receive quick estimates for flights and hotels to plan out a vacation budget. Favorites can also be stored by creating an account.</p><p>This project was a group effort between myself, Rajita Maharjan, and Alexander Mesa. My primary contribution to the development was in API calls and general JavaScript functionality, although we each worked together on many aspects to gather input, get help, or just decide on a design aspect.</p><p>Easily my most complex project to date, this was an immense learning experience in both technical and teamwork aspects.</p><p class='italic'><span class='bold'>NOTE:</span> This project uses <a href='https://developers.amadeus.com/'>Amadeus Developer APIs</a>, which are currently in beta and subject to change. If the project isn't working properly, feel free to let me know and I will take a look at it.</p>",
@@ -22,14 +30,6 @@ var portfolioItems = [
     url: "https://barryriveroll.github.io/gif-generator",
     github: "https://github.com/barryriveroll/gif-generator",
     img: "./assets/images/gif1.png"
-  },
-  {
-    name: "TV Trivia",
-    text:
-      "<p>All questions are TV show related. You have 30 seconds per question to pick your answer. The progress bar fills up as you answer questions. The correct answer will be shown to you. Your final score will be displayed at the end</p><p>This project was primarily to reinforce knowledge learned up to this point, particularly JavaScript/jQuery, and also to use timers in a practical application. Bootstrap was used for the majority of styling with some CSS added for specific elements.</p>",
-    url: "https://barryriveroll.github.io/TriviaGame/",
-    github: "https://github.com/barryriveroll/TriviaGame",
-    img: "./assets/images/trivia1.png"
   },
   {
     name: "Goblin Grind RPG",
