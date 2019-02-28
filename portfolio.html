@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="assets/css/style1.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/main.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/debug.addIndicators.min.js"></script>
     <title>Barry Riveroll » Web Developer</title>
   </head>
   <body>
@@ -40,19 +38,15 @@
     </nav> -->
     <div class="container">
       <div class="row section" id="home">
-        <div class="col w-70">
+        <div class="col w-60">
           <h1 class="home-name">Barry Riveroll</h1>
           <h2 id="pin2" class="home-subtitle">
             » Junior <span class="stack-subtitle">Full-stack</span> web
             developer
           </h2>
         </div>
-        <div class="col w-30 center">
-          <h2 class="contact-h2">Contact</h2>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/barry-riveroll-684602166/"
-          >
+        <div class="col w-40 center">
+          <a target="_blank" href="https://www.linkedin.com/in/barry-riveroll/">
             <div class="contact-div">
               <i class="fab fa-linkedin-in contact-icon"></i>
               <h5>
@@ -82,40 +76,40 @@
       </div>
 
       <div class="row section" id="portfolio">
-        <div class="portfolio-current">
-          <i class="fas fa-times portfolio-close"></i>
-          <h3 id="port-name">Dart</h3>
-          <div class="col w-55">
-            <div class="port-image-div">
-              <img
-                id="port-image"
-                class="image-port-current"
-                src="./assets/images/dart1.png"
-                alt="Dart project image"
-              />
+        <div class="col w-100">
+          <div class="portfolio-current">
+            <i class="fas fa-times portfolio-close"></i>
+            <h3 id="port-name">Dart</h3>
+            <div class="col w-55">
+              <div class="port-image-div">
+                <img
+                  id="port-image"
+                  class="image-port-current"
+                  src="./assets/images/dart1.png"
+                  alt="Dart project image"
+                />
+              </div>
+              <div class="portfolio-links">
+                <a target="_blank" id="port-github" href=""
+                  ><i class="fab fa-github-square"></i
+                ></a>
+                <a target="_blank" id="port-url" href=""
+                  ><i class="fas fa-external-link-square-alt"></i
+                ></a>
+              </div>
             </div>
-            <div class="portfolio-links">
-              <a target="_blank" id="port-github" href=""
-                ><i class="fab fa-github-square"></i
-              ></a>
-              <a target="_blank" id="port-url" href=""
-                ><i class="fas fa-external-link-square-alt"></i
-              ></a>
-            </div>
+            <div class="col w-45" id="port-text"></div>
           </div>
-          <div class="col w-45" id="port-text"></div>
+          <div class="portfolio-selector"></div>
+          <div class="portfolio-tabs"></div>
         </div>
-        <div class="portfolio-selector"></div>
-        <div class="portfolio-tabs"></div>
       </div>
     </div>
     <footer>
       ©
       <a target="_blank" href="https://github.com/barryriveroll/Portfolio"
         >Barry Riveroll, 2019</a
-      ><br />
-      This portfolio uses
-      <a target="_blank" href="http://scrollmagic.io/">ScrollMagic</a>
+      >
     </footer>
   </body>
 </html>

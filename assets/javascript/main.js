@@ -1,5 +1,23 @@
 var portfolioItems = [
   {
+    name: "Food Fight",
+    summary: "Multiplayer real-time board game for 4 players",
+    text:
+      "<p>This project's emphasis is on Express and uses a server to route to HTML pages and use data from an API via GET method and add data via POST method. After answering the 10 questions and entering a name and photo URL (no photo uploading currently) the data is sent to the server. The user's 'scores', or the number values of each question, are compared against other users to find the user with the most similar answers.</p><p>Once the appropriate user is found, that data is returned from the API and shown in the browser to the user. Their survey questions and other data is now in the API as well, and the next person to take the survey could get matched with a previous user afterwards.</p><p>The data is also verified twice: once on the front-end, even though the basic inputs are fairly restricted, and again on the back-end before any data is actually stored in the server.</p>",
+    url: "https://safe-fortress-63021.herokuapp.com/",
+    github: "https://github.com/rwazny/Project-2",
+    img: "./assets/images/foodfight1.png"
+  },
+  {
+    name: "Burger Biter",
+    summary: "MySQL database with POST and GET methods",
+    text:
+      "<p>This project's emphasis is on Express and uses a server to route to HTML pages and use data from an API via GET method and add data via POST method. After answering the 10 questions and entering a name and photo URL (no photo uploading currently) the data is sent to the server. The user's 'scores', or the number values of each question, are compared against other users to find the user with the most similar answers.</p><p>Once the appropriate user is found, that data is returned from the API and shown in the browser to the user. Their survey questions and other data is now in the API as well, and the next person to take the survey could get matched with a previous user afterwards.</p><p>The data is also verified twice: once on the front-end, even though the basic inputs are fairly restricted, and again on the back-end before any data is actually stored in the server.</p>",
+    url: "https://boiling-dusk-65986.herokuapp.com/",
+    github: "https://github.com/barryriveroll/burger",
+    img: "./assets/images/burger1.png"
+  },
+  {
     name: "Friend Finder",
     summary: "MySQL database with POST and GET methods",
     text:
@@ -12,7 +30,7 @@ var portfolioItems = [
     name: "Dart",
     summary: "Travel planner via flight and hotel API",
     text:
-      "<p>Choose a starting location and a destination location and receive quick estimates for flights and hotels to plan out a vacation budget. Favorites can also be stored by creating an account.</p><p>This project was a group effort between myself, Rajita Maharjan, and Alexander Mesa. My primary contribution to the development was in API calls and general JavaScript functionality, although we each worked together on many aspects to gather input, get help, or just decide on a design aspect.</p><p>Easily my most complex project to date, this was an immense learning experience in both technical and teamwork aspects.</p><p class='italic'><span class='bold'>NOTE:</span> This project uses <a href='https://developers.amadeus.com/'>Amadeus Developer APIs</a>, which are currently in beta and subject to change. If the project isn't working properly, feel free to let me know and I will take a look at it.</p>",
+      "<p>Choose a starting location and a destination location and receive quick estimates for flights and hotels to plan out a vacation budget. Favorites can also be stored by creating an account.</p><p>This project was a group effort between myself, <a target='_blank' href='https://github.com/marajita/'>Rajita Maharjan</a>, and <a target='_blank' href='https://github.com/AlexanderMesa'>Alexander Mesa</a>. My primary contribution to the development was in API calls and general JavaScript functionality, although we each worked together on many aspects to gather input, get help, or just decide on a design aspect.</p><p>Easily my most complex project to date, this was an immense learning experience in both technical and teamwork aspects.</p><p class='italic'><span class='bold'>NOTE:</span> This project uses <a href='https://developers.amadeus.com/'>Amadeus Developer APIs</a>, which are currently in beta and subject to change. If the project isn't working properly, feel free to let me know and I will take a look at it.</p>",
     url: "https://marajita.github.io/Travel-Project/",
     github: "https://github.com/marajita/Travel-Project",
     img: "./assets/images/dart1.png"
@@ -61,51 +79,32 @@ function changePortfolioView(id) {
   $("#port-image").attr("src", portfolioItems[id].img);
   $("#port-url").attr("href", portfolioItems[id].url);
   $("#port-github").attr("href", portfolioItems[id].github);
-
-  var selectorLeft = 0 + id * 178;
-  $(".portfolio-selector").css("left", selectorLeft + "px");
 }
 
 $(document).ready(function() {
-  var controller = new ScrollMagic.Controller();
   drawPortfolio();
+
   $(".portfolio-div").on("click", function() {
     var portfolioId = $(this).attr("data-id");
     changePortfolioView(portfolioId);
-    $(".portfolio-current").css("height", "600px");
-    $(".portfolio-div").css("width", "158px");
-    $(".portfolio-div").css("height", "100px");
-    $(".portfolio-thumbnail").css("width", "158px");
-    $(".portfolio-h3").css("font-size", "18px");
-    $(".portfolio-selector").css("height", "118px");
-    $(".portfolio-tabs").css("top", "-118px");
+    $(".portfolio-clicked").removeClass("portfolio-clicked");
+    $(this).addClass("portfolio-clicked");
+    $(".portfolio-current").css("height", "500px");
+    // $(".portfolio-div").css("width", "158px");
+    // $(".portfolio-div").css("height", "100px");
+    // $(".portfolio-thumbnail").css("width", "158px");
+    // $(".portfolio-h3").css("font-size", "18px");
+    // $(".portfolio-tabs").css("top", "-118px");
   });
 
   $(".portfolio-close").on("click", function() {
+    $(".portfolio-clicked").removeClass("portfolio-clicked");
     $(".portfolio-current").css("height", "0px");
-    $(".portfolio-div").css("width", "336px");
-    $(".portfolio-div").css("height", "232px");
-    $(".portfolio-thumbnail").css("width", "336px");
-    $(".portfolio-h3").css("font-size", "34px");
-    $(".portfolio-selector").css("height", "0px");
-    $(".portfolio-tabs").css("top", "0px");
-  });
-
-  $("a").on("click", function(e) {
-    if (this.hash !== "") {
-      e.preventDefault();
-
-      var hash = this.hash;
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top
-        },
-        400,
-        function() {
-          window.location.hash = hash;
-        }
-      );
-    }
+    // $(".portfolio-div").css("width", "336px");
+    // $(".portfolio-div").css("height", "232px");
+    // $(".portfolio-thumbnail").css("width", "336px");
+    // $(".portfolio-h3").css("font-size", "34px");
+    // $(".portfolio-tabs").css("top", "0px");
   });
 
   $("#contact-email").on("click", function() {
@@ -140,21 +139,4 @@ $(document).ready(function() {
       $(".portfolio-tabs").append(newPortDiv);
     });
   }
-
-  var scene = new ScrollMagic.Scene({ triggerElement: "#about" })
-    .setClassToggle("#nav-trigger", "nav-shown")
-    .addTo(controller);
-
-  var trigger = 0.3;
-  scene.triggerHook(trigger);
-
-  new ScrollMagic.Scene({ triggerElement: "#about", duration: 900 })
-    .setClassToggle("#nav-about", "nav-this-page")
-    .addTo(controller);
-  new ScrollMagic.Scene({ triggerElement: "#portfolio", duration: 650 })
-    .setClassToggle("#nav-portfolio", "nav-this-page")
-    .addTo(controller);
-  new ScrollMagic.Scene({ triggerElement: "#contact", duration: 600 })
-    .setClassToggle("#nav-contact", "nav-this-page")
-    .addTo(controller);
 });
