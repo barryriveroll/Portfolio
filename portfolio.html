@@ -22,7 +22,7 @@
     <title>Barry Riveroll » Web Developer</title>
   </head>
   <body>
-    <nav id="nav-trigger" class="nav-hidden">
+    <!-- <nav id="nav-trigger" class="nav-hidden">
       <div class="col w-40"><h2 class="float-left">Barry Riveroll</h2></div>
       <div class="col w-60">
         <div class="navbar">
@@ -37,112 +37,50 @@
           </h5>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <div class="container">
       <div class="row section" id="home">
         <div class="col w-70">
           <h1 class="home-name">Barry Riveroll</h1>
           <h2 id="pin2" class="home-subtitle">
-            » <span class="stack-subtitle">Full-stack</span> web developer
+            » Junior <span class="stack-subtitle">Full-stack</span> web
+            developer
           </h2>
         </div>
-        <div class="col w-30">
-          <ul class="home-nav">
-            <li class="nav-li"><a href="#about">About</a></li>
-            <li class="nav-li"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav-li"><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row section" id="about">
-        <div class="col w-40">
-          <div class="portrait-div">
-            <!-- #region PORTRAIT -->
-            <!--
-              <div class="row">
-                <div class="col w-100">
-                  <div id="hair" class="portrait-piece">
-                    <div
-                      class="float-left"
-                      id="hair-1"
-                      style="top: -141px;
-                      left: 310px;
-                      width: 181px;
-                      transform: rotate(13deg);
-                      border-top-left-radius: 113% 101%;"
-                    ></div>
-                    <div
-                      class="float-left"
-                      id="hair-1"
-                      style="top: -166px;
-                      left: 52px;"
-                    ></div>
-                    <div
-                      class="float-left"
-                      id="hair-1"
-                      style="top: -197px;
-                      left: 58px;
-                      width: 212px;
-                      height: 99px;
-                      transform: scale(1.8) rotate(-14deg);
-                      border-top-left-radius: 147% 228%;"
-                    ></div>
-                    <div
-                      class="float-left"
-                      id="hair-1"
-                      style="top: -177px;
-                      left: 259px;
-                      width: 92px;
-                      transform: rotate(185deg);"
-                    ></div>
-                  </div>
-                  <div class="float-left" id="hair-1"></div>
-                  <div id="glasses" class="portrait-piece">
-                    <div class="float-left" id="glasses-eye"></div>
-                    <div class="float-left" id="glasses-mid"></div>
-                    <div class="float-left" id="glasses-eye"></div>
-                  </div>
-                </div>
-              </div>
-            -->
-            <!-- #endregion -->
+        <div class="col w-30 center">
+          <h2 class="contact-h2">Contact</h2>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/barry-riveroll-684602166/"
+          >
+            <div class="contact-div">
+              <i class="fab fa-linkedin-in contact-icon"></i>
+              <h5>
+                Linkedin <i class="fas fa-external-link-square-alt"></i>
+              </h5></div
+          ></a>
+          <a target="_blank" href="https://github.com/barryriveroll">
+            <div class="contact-div">
+              <i class="fab fa-github contact-icon"></i>
+              <h5>
+                Github <i class="fas fa-external-link-square-alt"></i>
+              </h5></div
+          ></a>
+          <div id="contact-email" class="contact-div">
+            <i class="fas fa-at contact-icon"></i>
+            <h5>Email</h5>
           </div>
-          <div class="art-label">
-            <p class="label-text bold italic">Self-portrait</p>
-            <br />
-            <p class="label-text">2018</p>
-            <p class="label-text">Div elements</p>
-            <p class="label-text">378x450 pixels</p>
+          <div id="contact-phone" class="contact-div">
+            <i class="fas fa-phone contact-icon"></i>
+            <h5>Phone</h5>
+          </div>
+          <div class="contact-text-divs">
+            <div class="phone-text"></div>
+            <div class="email-text"></div>
           </div>
         </div>
-        <div class="col w-60">
-          <h5>Hey, I'm Barry</h5>
-          <p>
-            I'm a junior level full-stack web developer currently working
-            through UNC-Chapel Hill's Coding Bootcamp. I am experienced in HTML,
-            CSS (including multiple frameworks such as Bootstrap and Semantic
-            UI), and JavaScript/jQuery.
-          </p>
-          <p>
-            Besides this course, I have been a hobbyist programmer for the past
-            6+ years primarily using the Unity engine with C# and JavaScript.
-          </p>
-          <h5>Find Me Here</h5>
-          <p>
-            Find me on
-            <a target="_blank" href="https://github.com/barryriveroll"
-              >Github</a
-            >
-            and
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/barry-riveroll-684602166/"
-              >LinkedIn</a
-            >. Additional contact information can be found below in the Contact
-            section.
-          </p>
-        </div>
       </div>
+
       <div class="row section" id="portfolio">
         <div class="portfolio-current">
           <i class="fas fa-times portfolio-close"></i>
@@ -168,98 +106,7 @@
           <div class="col w-45" id="port-text"></div>
         </div>
         <div class="portfolio-selector"></div>
-        <div class="portfolio-tabs">
-          <div class="portfolio-div" data-id="0">
-            <div class="overlay"><h3 class="portfolio-h3">Dart</h3></div>
-            <img
-              class="portfolio-thumbnail"
-              src="./assets/images/dart1.png"
-              alt="RPG image"
-            />
-          </div>
-          <div class="portfolio-div" data-id="1">
-            <div class="overlay">
-              <h3 class="portfolio-h3">Rock, Paper, Scissors</h3>
-            </div>
-            <img
-              class="portfolio-thumbnail"
-              src="./assets/images/rps1.png"
-              alt="RPG image"
-            />
-          </div>
-          <div class="portfolio-div" data-id="2">
-            <div class="overlay"><h3 class="portfolio-h3">Gif Giver</h3></div>
-            <img
-              class="portfolio-thumbnail"
-              src="./assets/images/gif1.png"
-              alt="RPG image"
-            />
-          </div>
-          <div class="portfolio-div" data-id="3">
-            <div class="overlay"><h3 class="portfolio-h3">TV Trivia</h3></div>
-            <img
-              class="portfolio-thumbnail"
-              src="./assets/images/trivia1.png"
-              alt="RPG image"
-            />
-          </div>
-          <div class="portfolio-div" data-id="4">
-            <div class="overlay">
-              <h3 class="portfolio-h3">Goblin Grind RPG</h3>
-            </div>
-            <img
-              class="portfolio-thumbnail"
-              src="./assets/images/rpg1.png"
-              alt="RPG image"
-            />
-          </div>
-          <div class="portfolio-div" data-id="5">
-            <div class="overlay">
-              <h3 class="portfolio-h3">Word Guess: Zombies</h3>
-            </div>
-            <img
-              class="portfolio-thumbnail"
-              src="./assets/images/hangman1.png"
-              alt="RPG image"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="row section" id="contact">
-        <div class="col w-10"></div>
-        <div class="col w-80 center">
-          <h2>Contact</h2>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/barry-riveroll-684602166/"
-          >
-            <div class="contact-div">
-              <i class="fab fa-linkedin-in contact-icon"></i>
-              <h5>
-                Linkedin <i class="fas fa-external-link-square-alt"></i>
-              </h5></div
-          ></a>
-          <a target="_blank" href="https://github.com/barryriveroll">
-            <div class="contact-div">
-              <i class="fab fa-github contact-icon"></i>
-              <h5>
-                Github <i class="fas fa-external-link-square-alt"></i>
-              </h5></div
-          ></a>
-          <div id="contact-email" class="contact-div">
-            <i class="fas fa-at contact-icon"></i>
-            <h5>Email</h5>
-          </div>
-          <div id="contact-phone" class="contact-div">
-            <i class="fas fa-phone contact-icon"></i>
-            <h5>Phone Number</h5>
-          </div>
-          <div class="contact-text-divs">
-            <div class="phone-text"></div>
-            <div class="email-text"></div>
-          </div>
-        </div>
-        <div class="col w-10"></div>
+        <div class="portfolio-tabs"></div>
       </div>
     </div>
     <footer>
