@@ -360,6 +360,9 @@ button {
   overflow: hidden;
   border-radius: 5px;
 }
+.portfolio-current-extend {
+  height: 500px;
+}
 .portfolio-selector {
   position: relative;
   left: 200px;
@@ -481,15 +484,68 @@ footer {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   h1 {
     font-size: 43px;
+    width: 100vw;
   }
   .container {
     width: 100%;
   }
   .portfolio-div {
-    width: 100%;
+    width: 96%;
   }
   .home-subtitle {
-    width: 369px;
-    font-size: 19px;
+    width: 89vw;
+    font-size: 14px;
+  }
+  .contact-bar {
+    width: 100vw;
+    padding-top: 0px;
+    margin-top: -32px;
+  }
+  .contact-div {
+    width: 73px;
+  }
+  .portfolio-thumbnail {
+    width: 100%;
+  }
+  .portfolio-h3 {
+    font-size: 24px;
+    bottom: 20px;
+  }
+  .overlay p {
+    font-size: 14px;
+    margin-bottom: 3px;
+    margin-top: 80px;
+  }
+  .contact-text-divs {
+    width: 90%;
+  }
+  .contact-text-divs div {
+    width: 47%;
+    padding: 0px;
+    margin: 4px;
+  }
+  .email-text {
+    float: left;
+  }
+  .phone-text {
+    left: -9px;
+    position: relative;
+  }
+  #port-name {
+    padding: 5px;
+    font-size: 36px;
+  }
+  .w-55,
+  .w-45 {
+    width: 90%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .port-image-div {
+    height: 214px;
+    margin-top: 15px;
+  }
+  .portfolio-current-extend {
+    height: 760px;
   }
 }

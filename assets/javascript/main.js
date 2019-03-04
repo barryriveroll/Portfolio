@@ -3,7 +3,7 @@ var portfolioItems = [
     name: "Food Fight",
     summary: "Multiplayer real-time board game for 4 players",
     text:
-      "<p>This project's emphasis is on Express and uses a server to route to HTML pages and use data from an API via GET method and add data via POST method. After answering the 10 questions and entering a name and photo URL (no photo uploading currently) the data is sent to the server. The user's 'scores', or the number values of each question, are compared against other users to find the user with the most similar answers.</p><p>Once the appropriate user is found, that data is returned from the API and shown in the browser to the user. Their survey questions and other data is now in the API as well, and the next person to take the survey could get matched with a previous user afterwards.</p><p>The data is also verified twice: once on the front-end, even though the basic inputs are fairly restricted, and again on the back-end before any data is actually stored in the server.</p>",
+      "<p>A group project by myself, <a target='_blank' href='https://github.com/marajita/'>Rajita Maharjan</a>, <a target='_blank' href='https://github.com/AlexLloyd89/'>Alex Lloyd</a>, and <a target='_blank' href='https://github.com/rwazny/'>Ron Wazny</a>.</p><p>Food Fight is a fully playable real-time board game for 4 players built without a game framework such as Phaser.io or Gameboard.io.</p><p>For this project, my focus was primarily on back end functionality, specifically using Socket.io to communicate game changes real-time to all players, and back end validation of the game board's state. Whenever a player attempts to make a change to the board, such as moving a space on the board, the correct changes are made in the MySQL DB, then the front end's board is wiped out for all players and redrawn with the new updates.</p>",
     url: "https://safe-fortress-63021.herokuapp.com/",
     github: "https://github.com/rwazny/Project-2",
     img: "./assets/images/foodfight1.png"
@@ -89,17 +89,18 @@ $(document).ready(function() {
     changePortfolioView(portfolioId);
     $(".portfolio-clicked").removeClass("portfolio-clicked");
     $(this).addClass("portfolio-clicked");
-    $(".portfolio-current").css("height", "500px");
-    // $(".portfolio-div").css("width", "158px");
-    // $(".portfolio-div").css("height", "100px");
-    // $(".portfolio-thumbnail").css("width", "158px");
-    // $(".portfolio-h3").css("font-size", "18px");
-    // $(".portfolio-tabs").css("top", "-118px");
+    $(".portfolio-current").addClass("portfolio-current-extend");
+    $("html, body").animate(
+      {
+        scrollTop: $("#portfolio").offset().top - 50
+      },
+      400
+    );
   });
 
   $(".portfolio-close").on("click", function() {
     $(".portfolio-clicked").removeClass("portfolio-clicked");
-    $(".portfolio-current").css("height", "0px");
+    $(".portfolio-current").removeClass("portfolio-current-extend");
     // $(".portfolio-div").css("width", "336px");
     // $(".portfolio-div").css("height", "232px");
     // $(".portfolio-thumbnail").css("width", "336px");
