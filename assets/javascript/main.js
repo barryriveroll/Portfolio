@@ -12,7 +12,7 @@ var portfolioItems = [
     name: "Burger Biter",
     summary: "MySQL database with POST and GET methods",
     text:
-      "<p>This project's emphasis is on Express and uses a server to route to HTML pages and use data from an API via GET method and add data via POST method. After answering the 10 questions and entering a name and photo URL (no photo uploading currently) the data is sent to the server. The user's 'scores', or the number values of each question, are compared against other users to find the user with the most similar answers.</p><p>Once the appropriate user is found, that data is returned from the API and shown in the browser to the user. Their survey questions and other data is now in the API as well, and the next person to take the survey could get matched with a previous user afterwards.</p><p>The data is also verified twice: once on the front-end, even though the basic inputs are fairly restricted, and again on the back-end before any data is actually stored in the server.</p>",
+      '<p>Similar to Friend Finder, this project uses a MySQL database, although this time utilizing an ORM to simplify the queries (adding, modifying, and deleting).</p><p>Clicking the "Eat" button will modify the database column. The "Modify Burger" selector at the top can be used to change the name.</p><p>The ORM used for this application was built from scratch, not utilizing something like Sequelize. Writing the ORM to be modular enough to not only be usable in all instances here but also for the potential for me to use it elsewhere was the biggest challenge to overcome.</p>',
     url: "https://boiling-dusk-65986.herokuapp.com/",
     github: "https://github.com/barryriveroll/burger",
     img: "./assets/images/burger1.png"
