@@ -8,7 +8,7 @@ html {
     -webkit-radial-gradient(80% 50%, circle, #ffffff11, transparent),
     -webkit-radial-gradient(20% 80%, 40em 40em, #86867821, transparent),
     -webkit-radial-gradient(10% 10%, circle, #ccb3ac48, transparent),
-    url(../images/bg.jpg);
+    url(../images/bg-min.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,17 +222,6 @@ button {
   text-transform: uppercase;
   border: solid 1px rgba(172, 29, 72, 0.774);
   cursor: pointer;
-}
-.portfolio-main-div {
-  background: linear-gradient(
-      25deg,
-      rgba(241, 233, 226, 1) 0%,
-      rgba(230, 228, 217, 0.863) 39%,
-      rgba(145, 149, 161, 0.349) 68%,
-      rgba(33, 61, 110, 0.027) 89%
-    ),
-    url("../images/rpg1.png") no-repeat;
-  height: 100%;
 }
 .home-nav {
   list-style-type: none;
