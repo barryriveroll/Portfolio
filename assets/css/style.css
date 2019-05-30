@@ -311,7 +311,7 @@ button {
 .portfolio-div:hover {
   transform: scale(1.05);
   cursor: pointer;
-  box-shadow: 3px 8px 4px #0000006c;
+  box-shadow: 6px 8px 9px #0000006c;
 }
 .portfolio-div:hover .overlay {
   filter: opacity(100%);
