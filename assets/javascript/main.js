@@ -106,7 +106,7 @@ $(document).ready(function() {
   drawPortfolio();
 
   // This will act when the submit BUTTON is clicked
-  $("#sufbmit-contact").click(function(event) {
+  $("#submit-contact").click(function(event) {
     event.preventDefault();
     var txtData = buildData();
     window.location.href =
@@ -114,7 +114,7 @@ $(document).ready(function() {
   });
 
   // This will act when the submit LINK is clicked
-  $("#submit-contact").click(function(event) {
+  $("#submit-contact-2").click(function(event) {
     var txtData = buildData();
     $(this)
       .attr("download", "sugguestedName.txt")
