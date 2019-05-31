@@ -90,39 +90,8 @@ function changePortfolioView(id) {
   $("#port-github").attr("href", portfolioItems[id].github);
 }
 
-function buildData() {
-  var txtData =
-    "Name: " +
-    $("#name-input").val() +
-    "\r\nCompany: " +
-    $("#company-input").val() +
-    "\r\nEmail: " +
-    $("#email-input").val();
-
-  return txtData;
-}
-
 $(document).ready(function() {
   drawPortfolio();
-
-  // This will act when the submit BUTTON is clicked
-  $("#submit-contact").click(function(event) {
-    event.preventDefault();
-    var txtData = buildData();
-    window.location.href =
-      "data:application/octet-stream;base64," + Base64.encode(txtData);
-  });
-
-  // This will act when the submit LINK is clicked
-  $("#submit-contact-2").click(function(event) {
-    var txtData = buildData();
-    $(this)
-      .attr("download", "sugguestedName.txt")
-      .attr(
-        "href",
-        "data:application/octet-stream;base64," + Base64.encode(txtData)
-      );
-  });
 
   $(".portfolio-div").on("click", function() {
     var portfolioId = $(this).attr("data-id");
